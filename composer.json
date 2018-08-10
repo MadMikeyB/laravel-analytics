@@ -7,6 +7,7 @@
         "laravel-analytics"
     ],
     "license": "MIT",
+    "version": "0.0.1",
     "homepage": "https://github.com/madmikeyb/laravel-analytics",
     "authors": [
         {
