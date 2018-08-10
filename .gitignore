@@ -1,1 +1,8 @@
-vendor/
+build
+composer.lock
+docs
+vendor
+coverage
+yarn.lock
+mix-manifest.json
+.DS_Store
