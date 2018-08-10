@@ -27,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "MadMikeyB\\Analytics\\": "src"
+            "MadMikeyB\\Laralytics\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "MadMikeyB\\Analytics\\Tests\\": "tests"
+            "MadMikeyB\\Laralytics\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -45,10 +45,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "MadMikeyB\\Analytics\\Providers\\AnalyticsServiceProvider"
+                "MadMikeyB\\Laralytics\\Providers\\LaralyticsServiceProvider"
             ],
             "aliases": {
-                "Analytics": "MadMikeyB\\Analytics\\Facades\\Analytics"
+                "Laralytics": "MadMikeyB\\Laralytics\\Facades\\Laralytics"
             }
         }
     }
