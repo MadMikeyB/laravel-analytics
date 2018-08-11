@@ -49,7 +49,7 @@
                 "MadMikeyB\\Laralytics\\Providers\\LaralyticsServiceProvider"
             ],
             "aliases": {
-                "Laralytics": "MadMikeyB\\Laralytics\\Facades\\Laralytics"
+                "Laralytics": "MadMikeyB\\Laralytics\\Facades\\LaralyticsFacade"
             }
         }
     }

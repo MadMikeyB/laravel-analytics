@@ -1,7 +1,9 @@
 <?php
 namespace MadMikeyB\Laralytics\Providers;
 
+use MadMikeyB\Laralytics\Laralytics;
 use Illuminate\Support\ServiceProvider;
+use MadMikeyB\Laralytics\Http\Middleware\TrackSession;
 
 /**
  * Laralytics
@@ -47,8 +49,11 @@ class LaralyticsServiceProvider extends ServiceProvider
     public function register()
     {
         // Alias
-        // $this->app->bind('laralytics', function () {
-        //     return new MadMikeyB\Laralytics\Facades\Laralytics;
-        // });
+        $this->app->bind('laralytics', function () {
+            return new Laralytics;
+        });
+
+        // Alias Middleware
+        $this->app['router']->aliasMiddleware('laralytics.tracksession', TrackSession::class);
     }
 }
